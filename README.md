@@ -33,6 +33,7 @@ This library can be installed a number of ways.
 ```bash
 git clone https://github.com/lduck11007/c-bool-value.git
 cp c-bool-value/src/cboolvalue.h cboolvalue.h
+rm -rf c-bool-value
 ```
 
 ### Curl
@@ -70,3 +71,43 @@ In cmd in the same directory or with `PATH` configured, type
 ```bash
 get https://raw.githubusercontent.com/lduck11007/c-bool-value/master/src/cboolvalue.h
 ```
+
+### Examples
+
+A simple function that returns true or false depending on whether an item is in an array
+
+```c
+#include <cboolvalue.h>
+
+int search(char values[], int len, char searchfor){
+    int search_at = 0;
+    int search_res = false;
+    while(search_at < len && search_res == false){
+        if(values[search_at] == searchfor)
+            search_res = true;
+        else
+            search_at += 1;
+    }
+    return search_res;
+}
+```
+
+For power users and kernel hackers, this can be rewritten as follows for far easier readability.
+
+```c
+#include <cboolvalue.h>
+#define bool int
+int search(char values[], int len, char searchfor){
+    int search_at = 0;
+    bool search_res = false;
+    while(search_at < len && search_res == false){
+        if(values[search_at] == searchfor)
+            search_res = true;
+        else
+            search_at += 1;
+    }
+    return search_res;
+}
+```
+
+It's plain to see that this program is now far easier to read for a programmer of any skill level, and is practically self-documenting.
