@@ -6,6 +6,7 @@
 [![dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-yellowgreen.svg)](#) 
 [![size](https://img.shields.io/badge/code%20size-31%20B-blue.svg)](#) 
 [![usedby](https://img.shields.io/badge/used%20by-0%20projects-brightgreen.svg)](#) 
+[![downloads](https://img.shields.io/badge/downloads-0k%2Fmonth-green.svg)](#) 
 [![standard](https://img.shields.io/badge/standard-%3E%3DANSI-green.svg)](#) 
 [![Version](https://img.shields.io/badge/version-v1.0-blue.svg)](https://github.com/lduck11007/cBoolType/releases)
 [![License](https://img.shields.io/badge/License-WTFPL-blue.svg)](https://github.com/lduck11007/cBoolType/blob/master/LICENSE)
