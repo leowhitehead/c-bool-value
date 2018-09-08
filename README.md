@@ -23,3 +23,50 @@ One of the major factors preventing newer programmers from adopting C is its lac
 
 *  `True` value
 * `False` value
+
+## Installing 
+
+This library can be installed a number of ways.
+
+### Git
+
+```bash
+git clone https://github.com/lduck11007/c-bool-value.git
+cp c-bool-value/src/cboolvalue.h cboolvalue.h
+```
+
+### Curl
+
+```bash
+curl https://raw.githubusercontent.com/lduck11007/c-bool-value/master/src/cboolvalue.h > cboolvalue.h
+```
+
+### Windows CMD
+
+Create a file labled `get.bat` with the following:
+
+```batch
+@Echo OFF
+SetLocal EnableDelayedExpansion
+Set Var=%1
+Set Var=!Var:http://=!
+Set Var=!Var:/=,!
+Set Var=!Var:%%20=?!
+Set Var=!Var: =?!
+Call :LOOP !var!
+Echo.Downloading: %1 to %~p0!FN!
+powershell.exe -Command (new-object System.Net.WebClient).DownloadFile('%1','%~p0!FN!')
+GoTo :EOF
+:LOOP
+If "%1"=="" GoTo :EOF
+Set FN=%1
+Set FN=!FN:?= !
+Shift
+GoTo :LOOP
+```
+
+In cmd in the same directory or with `PATH` configured, type
+
+```bash
+get https://raw.githubusercontent.com/lduck11007/c-bool-value/master/src/cboolvalue.h
+```
