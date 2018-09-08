@@ -77,7 +77,7 @@ get https://raw.githubusercontent.com/lduck11007/c-bool-value/master/src/cboolva
 A simple function that returns true or false depending on whether an item is in an array
 
 ```c
-#include <cboolvalue.h>
+#include "cboolvalue.h"
 
 int search(char values[], int len, char searchfor){
     int search_at = 0;
@@ -95,8 +95,9 @@ int search(char values[], int len, char searchfor){
 For power users and kernel hackers, this can be rewritten as follows for far easier readability.
 
 ```c
-#include <cboolvalue.h>
-#define bool int
+#include "cboolvalue.h"
+#define bool int                    //TODO: learn how typedef works
+
 int search(char values[], int len, char searchfor){
     int search_at = 0;
     bool search_res = false;
