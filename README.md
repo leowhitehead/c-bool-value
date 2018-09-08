@@ -138,10 +138,13 @@ Most contributing to this project is more than welcome and greatly appreciated. 
 ## FAQ
 
 **Q. Why not use <stdbool.h>?**
+
 A. It is common knowlege that header files that are too large cause programs to run much slower, this project is an incredibly efficient and minimal approach towards boolean values in stanard C.
 
 **Q. When will you rewrite it in Rust/Go?**
-A. When hell freezes over
+
+A. After I finish porting it to Haskell
 
 **Q. What kind of projects can I use this in?**
-A. Please refer to the [license](https://github.com/lduck11007/c-bool-value/blob/master/LICENSE)
+
+A. Please refer to the [license](https://github.com/lduck11007/c-bool-value/blob/master/LICENSE).
