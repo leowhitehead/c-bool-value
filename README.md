@@ -139,7 +139,7 @@ Most contributing to this project is more than welcome and greatly appreciated. 
 
 **Q. Why not use <stdbool.h>?**
 
-A. It is common knowlege that header files that are too large cause programs to run much slower, this project is an incredibly efficient and minimal approach towards boolean values in stanard C.
+This is faster.
 
 **Q. When will you rewrite it in Rust/Go?**
 
