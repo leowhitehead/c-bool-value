@@ -98,7 +98,7 @@ For power users and kernel hackers, this can be rewritten as follows for far eas
 #include "cboolvalue.h"
 #define bool int                    //TODO: learn how typedef works
 
-int search(char values[], int len, char searchfor){
+bool search(char values[], int len, char searchfor){
     int search_at = 0;
     bool search_res = false;
     while(search_at < len && search_res == false){
@@ -112,3 +112,36 @@ int search(char values[], int len, char searchfor){
 ```
 
 It's plain to see that this program is now far easier to read for a programmer of any skill level, and is practically self-documenting.
+
+### More examples
+
+Simple function that returns whether an array is sorted or not, made instantly more easy to understand with true and false values.
+
+```c
+#include "cboolvalue.h"
+#define bool int
+bool issorted(char array[], int len){
+    bool sorted = true;
+    int i;
+    for(i = 0; i < len; ++i){
+        if(array[i-1] > array[i])
+            sorted = false;
+    }
+    return sorted;
+}
+```
+
+### Contributing
+
+Most contributing to this project is more than welcome and greatly appreciated. Before contributing, please read [contributing.md](https://github.com/lduck11007/c-bool-value/blob/master/CONTRIBUTING.md) for guidelines.
+
+## FAQ
+
+**Q. Why not use <stdbool.h>?**
+A. It is common knowlege that header files that are too large cause programs to run much slower, this project is an incredibly efficient and minimal approach towards boolean values in stanard C.
+
+**Q. When will you rewrite it in Rust/Go?**
+A. When hell freezes over
+
+**Q. What kind of projects can I use this in?**
+A. Please refer to the [license](https://github.com/lduck11007/c-bool-value/blob/master/LICENSE)
