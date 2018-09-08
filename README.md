@@ -1,4 +1,4 @@
-# cBoolType
+# C Boolean Value
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#) 
 [![Coverage Status](https://img.shields.io/badge/coverage-95%25-green.svg)](https://coveralls.io/r/Snaipe/libcsptr?branch=master)
@@ -11,3 +11,15 @@
 [![Version](https://img.shields.io/badge/version-v1.0-blue.svg)](https://github.com/lduck11007/cBoolType/releases)
 [![License](https://img.shields.io/badge/License-WTFPL-blue.svg)](https://github.com/lduck11007/cBoolType/blob/master/LICENSE)
 
+## What this is
+
+This project is an attempt to bring 'true' and 'false' values to the (GCC) C Programming language. This project may work in C++, but no testing has been done.
+
+## Motivations
+
+One of the major factors preventing newer programmers from adopting C is its lack of similarity with higher level languages and constructs. The most noticable difference between C and these more modern languages is likely its lack of reserved `true` and `false` values. By making this, I hope to draw more people to use the C Programming Language.
+
+## Features
+
+*  `True` value
+* `False` value
